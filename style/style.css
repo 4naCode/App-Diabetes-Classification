@@ -1,0 +1,81 @@
+body {
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+
+.stApp {
+    background-color: #0d1b2a;
+}
+
+.block-container {
+    background-color: #1b263b;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.stButton>button {
+    background-color: #3a506b;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0.5rem 1.5rem;
+}
+
+.stButton>button:hover {
+    background-color: #5bc0be;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+}
+
+.css-1q8dd3e {
+    color: #ffffff;
+}
+
+.stNumberInput label {
+    color: #ffffff !important;
+    /* Label input berwarna putih */
+}
+
+.stNumberInput input {
+    width: 100px;
+    /* Atur ukuran input lebih kecil */
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #e5e5e5;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
