@@ -10,9 +10,8 @@ body {
 }
 /*Description Setting*/
 .centered-text {
-        text-align: center;
-        font-size: 18px;  /* Ukuran font yang lebih kecil */
-        
+    text-align: justify;  /* Mengatur teks agar rata kiri dan kanan */
+    font-size: 18px;      /* Ukuran font yang lebih kecil */
 }
 /* Background color for the main content area */
 .main {
