@@ -44,14 +44,6 @@ h6 {
     /* Label input berwarna putih */
 }
 
-.stNumberInput input {
-    width: 100px;
-    /* Atur ukuran input lebih kecil */
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid #e5e5e5;
-}
-
 .footer {
     position: fixed;
     bottom: 0;
