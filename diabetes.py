@@ -1,8 +1,7 @@
 import streamlit as st
 import numpy as np
-import os
 import joblib
-# Load model
+
 # Load model
 def load_model():
     model = joblib.load('diabetes_model.pkl')
