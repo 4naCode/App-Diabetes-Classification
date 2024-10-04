@@ -53,18 +53,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# CSS untuk menempatkan judul di tengah
-st.markdown(
-    """
-    <style>
-    .centered-title {
-        text-align: center;
-        font-size: 40px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 # Judul aplikasi
 #st.title("🚑 Diabetes Classification App")
 # Membuat judul dan menerapkan class CSS yang telah dibuat
