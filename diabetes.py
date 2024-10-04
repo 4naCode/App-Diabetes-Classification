@@ -103,3 +103,11 @@ st.markdown("""
                 <p>Copyright by <a href="https://noerilagians.blogspot.com/" target="_blank">agian</a></p>
             </div>
             """, unsafe_allow_html=True)
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
