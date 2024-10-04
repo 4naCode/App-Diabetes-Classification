@@ -12,7 +12,7 @@ body {
 .centered-text {
         text-align: center;
         font-size: 5px;  /* Ukuran font yang lebih kecil */
-        font-weight: bold;
+        
     }
 /* Background color for the main content area */
 .main {
