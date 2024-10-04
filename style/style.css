@@ -44,6 +44,7 @@ body {
 /* Background color for the main content area */
 .main {
     background-color: #273346;
+    padding: 1rem;
 }
 
 /* Background color for sidebar and most interactive widgets */
@@ -59,6 +60,8 @@ body {
     background-color: #1b263b;
     border-radius: 15px;
     padding: 2rem;
+    max-width: 90%; /* Ensure it doesn't overflow on small screens */
+    margin: auto; /* Center content */
 }
 
 .stButton>button {
@@ -67,6 +70,9 @@ body {
     border-radius: 10px;
     font-size: 18px;
     padding: 0.5rem 1.5rem;
+    width: 100%; /* Make buttons full-width on small screens */
+    max-width: 300px; /* Limit button size on large screens */
+    margin: 1rem auto; /* Add spacing and center button */
 }
 
 .stButton>button:hover {
@@ -74,13 +80,9 @@ body {
     color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
+    text-align: center; /* Center headings */
 }
 
 .css-1q8dd3e {
@@ -92,8 +94,9 @@ h6 {
     /* Label input berwarna putih */
 }
 
+/* Footer Styling */
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -102,7 +105,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: auto;
+    padding: 1rem;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,6 +123,24 @@ h6 {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem; /* Adjust padding for small screens */
+    }
+
+    .stButton>button {
+        font-size: 16px; /* Smaller button font for mobile */
+        padding: 0.5rem 1rem;
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer content vertically */
+        padding: 1rem;
+    }
+}
+
 /* customizable snowflake styling */
 .snowflake {
   color: #FFF;
