@@ -4,7 +4,7 @@ body {
 }
 /* Judul Setting*/
 .centered-title {
-        text-align: center;
+        text-align: justify; /* jika ingin di tengah ubah to center */
         font-size: 40px;
         font-weight: bold;  /* Menambahkan bold */
 }
