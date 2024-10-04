@@ -5,7 +5,7 @@ body {
 /* Judul Setting*/
 .centered-title {
     text-align: center; /* Menjadikan judul di tengah */
-    font-size: 5vw; /* Menggunakan viewport width untuk font yang responsif */
+    font-size: 8vw; /* Menggunakan viewport width untuk font yang responsif */
     font-weight: bold;  /* Menambahkan bold */
 }
 
