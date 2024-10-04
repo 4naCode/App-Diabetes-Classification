@@ -1,13 +1,16 @@
 import streamlit as st
 import numpy as np
 import os
+import pickle
 # Load model
 def load_model():
     model_path = 'diabetes_model.pkl'
     
-    # Cek apakah file model ada
+     # Cek apakah file model ada
     if os.path.exists(model_path):
-        model = joblib.load(model_path)
+        # Menggunakan pickle untuk memuat model
+        with open(model_path, 'rb') as file:
+            model = pickle.load(file)
         return model
     else:
         st.error(f'File {model_path} tidak ditemukan. Pastikan file tersebut berada di direktori yang benar.')
