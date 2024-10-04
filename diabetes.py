@@ -8,14 +8,12 @@ def load_model():
     
      # Cek apakah file model ada
     if os.path.exists(model_path):
-        # Menggunakan pickle untuk memuat model
-        with open(model_path, 'rb') as file:
-            model = pickle.load(file)
+        with open(model_path, 'r') as file:
+            model = file.read()  # Membaca model dari file
         return model
     else:
         st.error(f'File {model_path} tidak ditemukan. Pastikan file tersebut berada di direktori yang benar.')
         return None
-
 # Fungsi untuk prediksi diabetes
 def predict_diabetes(model, input_data):
     prediction = model.predict([input_data])
