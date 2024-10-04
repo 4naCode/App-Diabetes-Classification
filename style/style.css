@@ -7,13 +7,13 @@ body {
         text-align: center;
         font-size: 40px;
         font-weight: bold;  /* Menambahkan bold */
-    }
+}
 /*Description Setting*/
 .centered-text {
         text-align: center;
         font-size: 5px;  /* Ukuran font yang lebih kecil */
         
-    }
+}
 /* Background color for the main content area */
 .main {
     background-color: #273346;
