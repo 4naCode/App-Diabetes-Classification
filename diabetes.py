@@ -3,17 +3,10 @@ import numpy as np
 import os
 import pickle
 # Load model
+# Load model
 def load_model():
-    model_path = 'diabetes_model.pkl'
-    
-     # Cek apakah file model ada
-    if os.path.exists(model_path):
-        with open(model_path, 'r') as file:
-            model = file.read()  # Membaca model dari file
-        return model
-    else:
-        st.error(f'File {model_path} tidak ditemukan. Pastikan file tersebut berada di direktori yang benar.')
-        return None
+    model = joblib.load('diabetes_model.pkl')
+    return model
 # Fungsi untuk prediksi diabetes
 def predict_diabetes(model, input_data):
     prediction = model.predict([input_data])
