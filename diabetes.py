@@ -1,11 +1,17 @@
 import streamlit as st
 import numpy as np
-import joblib
-
+import os
 # Load model
 def load_model():
-    model = joblib.load('diabetes_model.pkl')
-    return model
+    model_path = 'diabetes_model.pkl'
+    
+    # Cek apakah file model ada
+    if os.path.exists(model_path):
+        model = joblib.load(model_path)
+        return model
+    else:
+        st.error(f'File {model_path} tidak ditemukan. Pastikan file tersebut berada di direktori yang benar.')
+        return None
 
 # Fungsi untuk prediksi diabetes
 def predict_diabetes(model, input_data):
