@@ -4,9 +4,23 @@ body {
 }
 /* Judul Setting*/
 .centered-title {
-        text-align: justify; /* jika ingin di tengah ubah to center */
-        font-size: 40px;
-        font-weight: bold;  /* Menambahkan bold */
+    text-align: center; /* Menjadikan judul di tengah */
+    font-size: 5vw; /* Menggunakan viewport width untuk font yang responsif */
+    font-weight: bold;  /* Menambahkan bold */
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 600px) {
+    .centered-title {
+        font-size: 6vw; /* Menyesuaikan ukuran font untuk mobile */
+    }
+}
+
+/* Media query untuk layar besar seperti desktop */
+@media (min-width: 1200px) {
+    .centered-title {
+        font-size: 3vw; /* Menyesuaikan ukuran font untuk desktop */
+    }
 }
 /*Description Setting*/
 .centered-text {
