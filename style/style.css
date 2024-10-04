@@ -2,6 +2,12 @@ body {
     background-color: #0d1b2a;
     color: #ffffff;
 }
+/* Judukl Setting*/
+.centered-title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;  /* Menambahkan bold */
+    }
 /* Background color for the main content area */
 .main {
     background-color: #273346;
