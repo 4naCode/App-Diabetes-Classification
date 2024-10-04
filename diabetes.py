@@ -12,7 +12,6 @@ def predict_diabetes(model, input_data):
     prediction = model.predict([input_data])
     return prediction[0]
 
-
 # Fungsi untuk membaca file CSS
 def load_css(file_name):
     with open(file_name) as f:
@@ -29,15 +28,22 @@ st.write("""
 ## Input the following data for Diabetes Classification
 """)
 
-# Membuat form input dengan warna dark-themed
-pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
-glucose = st.number_input('Glucose', min_value=0, max_value=200, value=120)
-blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=180, value=80)
-skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=20)
-insulin = st.number_input('Insulin', min_value=0, max_value=800, value=85)
-bmi = st.number_input('BMI', min_value=0.0, max_value=70.0, value=25.0)
-diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.0, max_value=3.0, value=0.5)
-age = st.number_input('Age', min_value=1, max_value=120, value=25)
+# Membagi form menjadi dua kolom
+col1, col2 = st.columns(2)
+
+# Kolom kiri
+with col1:
+    pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
+    glucose = st.number_input('Glucose', min_value=0, max_value=200, value=120)
+    blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=180, value=80)
+    skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=20)
+
+# Kolom kanan
+with col2:
+    insulin = st.number_input('Insulin', min_value=0, max_value=800, value=85)
+    bmi = st.number_input('BMI', min_value=0.0, max_value=70.0, value=25.0)
+    diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.0, max_value=3.0, value=0.5)
+    age = st.number_input('Age', min_value=1, max_value=120, value=25)
 
 # Menggabungkan input menjadi array
 input_data = [pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function, age]
@@ -55,10 +61,9 @@ if st.button('🚨 Predict Diabetes'):
 # Menampilkan data input
 st.write(f'**Data yang diinput:** {input_data}')
 
-#st.markdown(f"<h10 style='color: #32CD32; text-align: center;'>Data yang diinput: {input_data}</h10>", unsafe_allow_html=True)
 # Tambahkan footer
 st.markdown("""
             <div class="footer">
                 <p>Copyright by <a href="https://noerilagians.blogspot.com/" target="_blank">agian</a></p>
             </div>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
