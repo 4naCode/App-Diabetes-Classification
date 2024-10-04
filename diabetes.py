@@ -56,11 +56,11 @@ st.markdown(
 # Judul aplikasi
 #st.title("🚑 Diabetes Classification App")
 # Membuat judul dan menerapkan class CSS yang telah dibuat
-st.markdown('<p class="centered-title">🚑 Diabetes Classification App</p>', unsafe_allow_html=True)
+st.markdown('<p class="centered-title">🚑 Diabetes Prediction App</p>', unsafe_allow_html=True)
 
 # Deskripsi
 st.write("""
-## Input the following data for Diabetes Classification
+# Input the following data for Diabetes Classification
 """)
 
 # Membagi form menjadi dua kolom
