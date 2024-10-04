@@ -62,7 +62,7 @@ st.markdown('<p class="centered-title">🚑 Diabetes Prediction App</p>', unsafe
 # Input the following data for Diabetes Classification
 #""")
 
-st.markdown('<p class="centered-text">Input the following data for Diabetes Classification</p>', unsafe_allow_html=True)
+st.markdown('<p class="centered-text">Aplikasi Prediksi Diabetes adalah sebuah platform interaktif yang dirancang untuk membantu pengguna dalam memprediksi kemungkinan risiko diabetes berdasarkan informasi kesehatan pribadi mereka. Dengan menggunakan algoritma machine learning yang canggih, aplikasi ini menganalisis data yang dimasukkan oleh pengguna untuk memberikan prediksi akurat</p>', unsafe_allow_html=True)
 
 # Membagi form menjadi dua kolom
 col1, col2 = st.columns(2)
