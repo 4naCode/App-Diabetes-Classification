@@ -124,22 +124,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .block-container {
-        padding: 1rem; /* Adjust padding for small screens */
-    }
-
-    .stButton>button {
-        font-size: 16px; /* Smaller button font for mobile */
-        padding: 0.5rem 1rem;
-    }
-
-    .footer {
-        flex-direction: column; /* Stack footer content vertically */
-        padding: 1rem;
-    }
-}
 
 /* customizable snowflake styling */
 .snowflake {
