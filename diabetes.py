@@ -55,7 +55,9 @@ st.markdown(
 )
 
 # Judul aplikasi
-st.title("🚑 Diabetes Classification App")
+#st.title("🚑 Diabetes Classification App")
+# Membuat judul dan menerapkan class CSS yang telah dibuat
+st.markdown('<p class="centered-title">🚑 Diabetes Classification App</p>', unsafe_allow_html=True)
 
 # Deskripsi
 st.write("""
