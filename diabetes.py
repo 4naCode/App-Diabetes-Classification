@@ -69,8 +69,7 @@ col1, col2 = st.columns(2)
 
 # Kolom kiri
 with col1:
-   # pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
-    pregnancies = st.text_input('Pregnancies')
+    pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
     glucose = st.number_input('Glucose', min_value=0, max_value=200, value=120)
     blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=180, value=80)
     skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=20)
