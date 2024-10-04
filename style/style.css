@@ -25,7 +25,21 @@ body {
 /*Description Setting*/
 .centered-text {
     text-align: justify;  /* Mengatur teks agar rata kiri dan kanan */
-    font-size: 15px;      /* Ukuran font yang lebih kecil */
+    font-size: 1.5vw;     /* Menggunakan unit viewport width agar ukuran font responsif */
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 600px) {
+    .centered-text {
+        font-size: 4vw;   /* Ukuran font yang lebih besar di layar kecil */
+    }
+}
+
+/* Media query untuk layar besar seperti desktop */
+@media (min-width: 1200px) {
+    .centered-text {
+        font-size: 1.2vw; /* Menyesuaikan ukuran font untuk desktop besar */
+    }
 }
 /* Background color for the main content area */
 .main {
