@@ -59,9 +59,11 @@ st.markdown(
 st.markdown('<p class="centered-title">🚑 Diabetes Prediction App</p>', unsafe_allow_html=True)
 
 # Deskripsi
-st.write("""
+#st.write("""
 # Input the following data for Diabetes Classification
-""")
+#""")
+
+st.markdown('<p class="centered-text">Input the following data for Diabetes Classification</p>', unsafe_allow_html=True)
 
 # Membagi form menjadi dua kolom
 col1, col2 = st.columns(2)
